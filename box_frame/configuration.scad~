@@ -11,14 +11,14 @@ include <inc/conf_bushing.scad>;
 
 // Custom settings here, tailor to your supplies and print settings
 
-layer_height = 0.3;
+layer_height = 0.25;
 width_over_thickness = 2.2;
 
 // Select your belt type ******************************************************
 
 //T2.5
-belt_tooth_distance = 2.5;
-belt_tooth_ratio = 0.75;
+//belt_tooth_distance = 2.5;
+//belt_tooth_ratio = 0.75;
 
 //T5 (strongly discouraged)
 //belt_tooth_distance = 5;
@@ -34,8 +34,8 @@ belt_tooth_ratio = 0.75;
 
 //GT2 there is bunch of GT2 belts with different tooth-to-tooth distance
 //adjust to your needs
-//belt_tooth_distance = 2;
-//belt_tooth_ratio = 0.5;
+belt_tooth_distance = 2;
+belt_tooth_ratio = 0.5;
 
 // For T type belts you will probably want 0.8mm or so.
 belt_thickness = 1.75;
@@ -65,14 +65,14 @@ bearing_624_double = [13, 10, 4, 0];
 // this one has roughly same diameter as pulley, makes belt parallel so its prettier
 bearing_623_double = [10, 8, 3, 0];
 
-idler_bearing = bearing_624_double;
+idler_bearing = bearing_608;
 
 //Select carriage lenght
 // 30 for single carriage extruder (two holes with centers 30mm apart)
 // 50 for wade or single with fan (three holes, 30-20)
 // 80 for full length carriage (four holes, 30-20-30)
 
-carriage_l_base = 50;
+carriage_l_base = 30;
 
 // Fillets ********************************************************************
 // fillets are rounded corners of boxes. The right engineering term is probably radius
@@ -101,7 +101,7 @@ y_threaded_rod_long_r = 5.4;
 board_thickness = 12;
 
 // segments of small holes. some poeple claim that a low value makes them easier to print.
-small_hole_segments=7;
+small_hole_segments=16;
 
 // END of custom settings
 
